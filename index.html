@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="interface-container">
+            <div class="marca-logo">🌱 AGROFORTE</div>
+            <nav>
+                <a href="#introducao">Tema</a>
+                <a href="#pilares">Equilíbrio</a>
+                <a href="#calculadora">Simulador</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <section id="introducao" class="banner-principal">
+
+        <div class="conteudo-banner">
+            <h1>Agro forte, futuro sustentável</h1>
+            <p class="slogan">O equilíbrio perfeito entre a produção de alimentos e a preservação do meio ambiente.</p>
+            <a href="#pilares" class="botao-destaque">Conhecer Práticas</a>
+        </div>
+
+    </section>
+
+    <section id="pilares" class="secao-conteudo">
+
+        <div class="interface-container">
+            <h2 class="titulo-secao">Os Pilares do Equilíbrio</h2>
+            <p class="subtitulo-secao">Como produzir com eficiência respeitando os limites da natureza.</p>
+            
+            <div class="grade-cards">
+                <div class="card-pilar">
+                    <div class="icone-pilar">💧</div>
+                    <h3>Irrigação Inteligente</h3>
+                    <p>Uso de tecnologias como o gotejamento automático e sensores de umidade no solo, reduzindo o desperdício de água e garantindo o crescimento saudável da lavoura.</p>
+                </div>
+
+                <div class="card-pilar">
+                    <div class="icone-pilar">🚜</div>
+                    <h3>Rotação de Culturas</h3>
+                    <p>Alternar espécies vegetais em uma mesma área preserva os nutrientes naturais da terra, quebra ciclos de pragas e reduz drasticamente a necessidade de fertilizantes químicos.</p>
+                </div>
+
+                <div class="card-pilar">
+                    <div class="icone-pilar">☀️</div>
+                    <h3>Energia Limpa</h3>
+                    <p>A implantação de painéis solares e o uso de biomassa nas fazendas garantem autonomia energética de forma limpa, barateando a produção e protegendo a atmosfera.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="calculadora" class="secao-interativa">
+
+        <div class="interface-container caixa-interacao">
+            <h2>Simulador de Impacto Agro-Sustentável</h2>
+            <p>Selecione as técnicas que você adotaria em sua propriedade rural e veja o resultado do balanço entre produção e preservação ambiental:</p>
+            
+            <div class="opcoes-simulacao">
+                <label class="item-opcao">
+                    <input type="checkbox" id="chk-agua" onchange="calcularImpacto()">
+                    Uso de Irrigação por Gotejamento
+                </label>
+
+                <label class="item-opcao">
+                    <input type="checkbox" id="chk-solo" onchange="calcularImpacto()">
+                    Adoção de Adubação Orgânica e Rotação
+                </label>
+
+                <label class="item-opcao">
+                    <input type="checkbox" id="chk-energia" onchange="calcularImpacto()">
+                    Uso de Fontes de Energia Solar
+                </label>
+            </div>
+
+            <div class="resultado-simulador">
+                <div class="medidor">
+                    <span class="rotulo-medidor">Capacidade de Produção:</span>
+                    <div class="barra-progresso"><div id="barra-producao" class="progresso"></div></div>
+                </div>
+                
+                <div class="medidor">
+                    <span class="rotulo-medidor">Preservação do Meio Ambiente:</span>
+                    <div class="barra-progresso"><div id="barra-ambiente" class="progresso"></div></div>
+                </div>
+                
+                <div id="mensagem-conclusao" class="texto-conclusao">
+                    Selecione as opções acima para calibrar o equilíbrio da sua fazenda!
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="interface-container">
+            <p>&copy; 2026 - Projeto Desenvolvido para o Concurso Agrinho.</p>
+            <p class="tema-rodape">Tema: "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
